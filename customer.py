@@ -1,10 +1,13 @@
 #from order import Order
+
 class Customer:
     _all_customers = []
  
     def __init__(self, name):
         self.name = name
         self._orders = []
+
+        Customer._all_customers.append(self)
 
     @property
     def name(self):
@@ -28,6 +31,7 @@ class Customer:
         return list({order.coffee for order in self._orders})
 
     def create_order(self, coffee, price):
+        from order import Order
         return Order(self, coffee, price)
 
 

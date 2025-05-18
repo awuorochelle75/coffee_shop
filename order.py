@@ -1,4 +1,4 @@
-#from customer import Customer
+from customer import Customer
 from coffee import Coffee
 
 
@@ -31,6 +31,11 @@ class Order:
         self._coffee = value
 
     @property
+    def price(self):
+         return self._price
+
+
+    @price.setter
     def price(self, value):
         if not (isinstance(value, (int, float)) and 1.0 <= value <= 10.0):
             raise ValueError("price must be a number between 1.0 and 10.0")
