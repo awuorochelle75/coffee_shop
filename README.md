@@ -1,1 +1,1 @@
-# Coffee Shop domain model
+# Coffee Shop Domain Modelling
