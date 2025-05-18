@@ -1,4 +1,4 @@
-
+from order import Order
 class Customer:
     def __init__(self, name):
         self.name = name
@@ -27,3 +27,6 @@ class Customer:
 
     def coffees(self):
         return list({order.coffee for order in self._orders})
+
+    def create_order(self, coffee, price):
+        return Order(self, coffee, price)
