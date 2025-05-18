@@ -1,3 +1,7 @@
+#from customer import Customer
+from coffee import Coffee
+
+
 class Order:
     def __init__(self,customer,coffee,price):
         self.customer = customer
