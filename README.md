@@ -2,7 +2,12 @@
 
 ## **Description**
 This project models a Coffee Shop domain using object-oriented programming principles in python.The application defines three main entities:'Customer','Coffee', and 'Order' and establishes their relationships to simulate a simple coffee ordering system.
-## Screenshots 
+## Project Structure
+- 'customer.py' - defines the 'Customer' class with properties,order management and aggregate methods.
+- 'coffee.py' - defines the 'Coffee' class with order tracking and statistics methods.
+- 'order.py' - defines the 'Order' class linking 'Customer' and 'Coffee' instances with a price attribute.
+- 'debug.py' - a script to manually test the domain model functionality interactively.
+
 
 
 ## Setup Instructions 
@@ -10,11 +15,11 @@ This project models a Coffee Shop domain using object-oriented programming princ
 ### **Requirements**
 - Before setting up the project, ensure you have the following installed:
 
-    - JavaScript
+    - Python 3.7 or higher
 
-    - Node.js & npm
+    - 'pipenv' - for virtual environment and dependency management.
 
-    - JSON Server
+    - 'pytest' - for running automated tests
 
     - Git
 
@@ -26,13 +31,13 @@ This project models a Coffee Shop domain using object-oriented programming princ
 1. **Clone the repository**   
 Open your terminal and run the following command:
     ```sh
-    $git clone https://github.com/awuorochelle75/webook-website.git
+    $git clone https://github.com/awuorochelle75/coffee_shop.git
 
 
 
 2. **Navigate to the project folder**
     ```sh
-        $cd webook-website
+        $cd coffee_shop
 
 3. **Install dependencies**
     ```sh
