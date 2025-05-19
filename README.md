@@ -25,7 +25,7 @@ This project models a Coffee Shop domain using object-oriented programming princ
 
     - Text Editor (e.g., Visual Studio Code)
 
-    - Web Browser
+   
 
 ### Getting Started 
 1. **Clone the repository**   
